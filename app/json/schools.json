@@ -1,0 +1,55 @@
+{
+    "result": 1,
+    "items": [
+        {
+            "id": 1,
+            "name": "盈進中学高等学校",
+            "address": "福山市千田町千田487-4",
+            "latLng": {
+                "lat": 34.523843,
+                "lng": 133.368109
+            },
+            "url": "http://www.eishin.ed.jp/"
+        },
+        {
+            "id": 2,
+            "name": "福山暁の星女子中学・高等学校",
+            "address": "福山市西深津町3-4-1",
+            "latLng": {
+                "lat": 34.495828,
+                "lng": 133.383994
+            },
+            "url": "https://www.akenohoshi.ed.jp/"
+        },
+        {
+            "id": 3,
+            "name": "銀河学院中・高等学校",
+            "address": "福山市大門町119-8",
+            "latLng": {
+                "lat": 34.501828,
+                "lng": 133.434712
+            },
+            "url": "http://www.ginga.ac.jp/"
+        },
+        {
+            "id": 4,
+            "name": "近畿大学附属広島高等学校・中学校 福山校",
+            "address": "福山市佐波町389",
+            "latLng": {
+                "lat": 34.482686,
+                "lng": 133.335123
+            },
+            "url": "http://fukuyama.kindai.ac.jp/"
+        },
+        {
+            "id": 5,
+            "name": "英数学館小・中・高等学校",
+            "address": "福山市引野町980-1",
+            "latLng": {
+                "lat": 34.500759,
+                "lng": 133.429499
+            },
+            "url": "https://www.eisu-ejs.ac.jp/"
+        }
+    ]
+}

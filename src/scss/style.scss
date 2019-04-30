@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.GoogleMap__map {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 340px;
+}
+
+.GoogleMap__swiper {
+    position: relative;
+	overflow: hidden;
+}
+
+.GoogleMap__swiperContent {
+	overflow: hidden;
+	margin: 0 30px;
+	width: calc(100% - 60px);
+}
+
+.GoogleMap__swiperWrapper {
+	margin:0;
+	padding: 0;
+    list-style: none;
+}
+
+.GoogleMap__swiperSlide {
+	box-sizing: border-box;
+	padding: 10px;
+	border: 1px solid #999;
+}
+
+.GoogleMap__swiperNavigation {
+    list-style: none;
+}
+
+.GoogleMap__swiperNavigation .swiper-button-prev {
+	left: 0;
+}
+
+.GoogleMap__swiperNavigation .swiper-button-next {
+	right: 0;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>福山市私立学校マップ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="components/swiper/4.5.0/css/swiper.min.css">
+</head>
+<body>
+    <div id="schoolmap" class="GoogleMap">
+        <div class="GoogleMap__map map-container">
+        </div><!-- /#map -->
+        <div class="GoogleMap__swiper">
+            <div class="GoogleMap__swiperContent swiper-container">
+                <ul class="GoogleMap__swiperWrapper swiper-wrapper">
+                </ul>
+            </div><!-- /.GoogleMap__swiperContent -->
+            <ul class="GoogleMap__swiperNavigation">
+                <li><button class="swiper-button-prev"></button></li>
+                <li><button class="swiper-button-next"></button></li>
+            </ul>
+        </div><!-- /#swiper -->
+    </div><!-- /.GoogleMap -->
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwp6rMbHhh6TxTtKrVyINxGNe6NJC8tfE"></script>
+    <script src="js/bundle.js"></script>
+    <script>
+        let schoolMap = new myLib.GoogleMap({
+            selector: '#schoolmap',
+            jsonPath: 'json/schools.json',
+            center: {
+                lat: 34.51044761493913,
+                lng: 133.37627491015624
+            }
+        });
+        schoolMap.init();
+    </script>
+</body>
+</html>
