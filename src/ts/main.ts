@@ -65,15 +65,14 @@ export class GoogleMap {
         this.options = {...this.options, ...options};
     }
 
-    init() {
+    async init() {
         this.initMap();
         this.initSwiper();
-        this.fetchJSON().then(data => {
-            if (data.items && data.items.length) {
-                this.setMarkersOnMap(data.items);
-                this.makeSwiperSlide(data.items);
-            }
-        });
+        let mappingData = await this.fetchJSON();
+        if (mappingData.result) {
+            this.setMarkersOnMap(mappingData.items);
+            this.makeSwiperSlide(mappingData.items);
+        }
     }
 
     initMap() {
