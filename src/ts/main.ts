@@ -107,7 +107,7 @@ export class GoogleMap {
         });
         this.swiper.on('slideChange', () => {
             let index = this.swiper.realIndex;
-            this.setIconImage(index);
+            this.setMarkerIconImage(index);
         });
     }
 
@@ -127,7 +127,7 @@ export class GoogleMap {
             });
             marker.addListener('click', () => {
                 this.swiper.slideTo(index);
-                this.setIconImage(index);
+                this.setMarkerIconImage(index);
                 this.activeMarkerIndex = index;
             });
 
@@ -135,10 +135,10 @@ export class GoogleMap {
         });
 
         this.activeMarkerIndex = 0;
-        this.setIconImage(0);
+        this.setMarkerIconImage(0);
     }
 
-    setIconImage(activateIndex: number) {
+    setMarkerIconImage(activateIndex: number) {
         if (this.activeMarkerIndex > -1) {
             this.markers[this.activeMarkerIndex].setIcon(this.options.mapIcon.normal);
         }
