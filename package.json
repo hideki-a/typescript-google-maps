@@ -15,7 +15,7 @@
     "gulp": "^4.0.1",
     "gulp-sass": "^4.0.2",
     "gulp-typescript": "^5.0.1",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "source-map-loader": "^0.2.4",
     "typescript": "^3.4.5",
     "webpack": "^4.30.0",
